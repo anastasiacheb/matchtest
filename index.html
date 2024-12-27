@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Match">
+    <title>Match</title>
+    <link rel="stylesheet" href="src/SCSS/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Merriweather:wght@400;700;900&family=Poppins&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__wrap invisible">
+        <div class="nav__profile elem_mobile">
+          <p>А</p>
+          <p>Аристарх</p>
+        </div>
+        <div class="logo nav__logo elem_desktop">
+          <img src="public/icons/Primary.svg" alt="logo" class="icon_size-xl">
+        </div>
+        <ul class="nav__menu">
+          <li><a href="#" class="nav__link">Партнёры</a></li>
+          <li><a href="#" class="nav__link">Тренеры</a></li>
+          <li><a href="#" class="nav__link">Корты</a></li>
+        </ul>
+      </div>
+      <button class="nav__burger elem_mobile">
+        <img src="public/icons/Frame132.svg" alt="burger menu" class="icon_size-l">
+      </button>
+      <div class="logo nav__logo elem_mobile">
+        <img src="public/icons/Primary.svg" alt="logo" class="icon_size-xl">
+      </div>
+      <div class="nav__account">
+        <button class="nav__message text_white">
+          <img src="public/icons/Ellipse7.svg" alt="illustration" class="icon_size-xxxs">
+          3
+          <span class="text text_white elem_desktop "> сообщения</span>
+        </button>
+        <div class="nav__profile elem_desktop">
+          <p>А</p>
+          <p>Аристарх</p>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section section_double">
+      <button class="filter__close elem_mobile invisible">
+        <img src="public/icons/Frame174.svg" alt="back" class="icon_size-xxs">
+        Назад
+      </button>
+      <div class="filter invisible">
+        
+        <div class="filter__adress">
+          <div class="filter__inner">
+            <p>Тверская улица, 7</p>
+            <img src="public/icons/Radius-info-icon.svg" alt="info icon" class="icon_size-m">
+          </div>
+          <div class="filter__range">
+            <div class="filter__inner">
+              <p>Радиус</p>
+              <p class="text_gray"><span id="location_value">30</span> км</p>
+            </div>
+            <div class="filter__input">
+              <input aria-label="район" type="range" min="0" max="60" step="1" value="30" name="location" id="location">
+            </div>
+          </div>
+        </div>
+        <div class="filter__wrap">
+
+          <div class="filter__content">
+            <div class="filter__range slider">
+              <div class="filter__inner">
+                <p>Уровень игры</p>
+                <p class="text_gray"><span class="value1">2</span>-<span class="value2">5</span></p>
+              </div>
+              <div class="filter__input slider__wrap">
+                <div class="slider__track"></div>
+                <input aria-label="уровень" type="range" min="1" max="7" step="1" value="2" name="level" id="level1" class="range1">
+                <input aria-label="уровень" type="range" min="1" max="7" step="1" value="5" name="level" id="level2" class="range2">
+              </div>
+            </div>
+
+            <div class="filter__time">
+              <div class="filter__range slider">
+                <div class="filter__inner">
+                  <p>Когда</p>
+                  <p class="text_gray">с <span class="value1">10</span> до <span class="value2">18</span></p>
+                </div>
+                <div class="filter__input slider__wrap">
+                  <div class="slider__track"></div>
+                  <input aria-label="время" type="range" min="6" max="24" step="1" value="10" name="time" id="time1" class="range1">
+                  <input aria-label="время" type="range" min="6" max="24" step="1" value="18" name="time" id="time2" class="range2">
+                </div>
+              </div>
+              <div class="filter__days">
+                <div class="checkbox">
+                  <input type="checkbox" checked name="ПН" id="ПН" class="checkbox__input">
+                  <label for="ПН" class="checkbox__label">Пн</label>
+                  </div>
+                <div class="checkbox">
+                  <input type="checkbox" checked name="ВТ" id="ВТ" class="checkbox__input">
+                  <label for="ВТ" class="checkbox__label">Вт</label>
+                  </div>
+                <div class="checkbox">
+                  <input type="checkbox" checked name="СР" id="СР" class="checkbox__input">
+                  <label for="СР" class="checkbox__label">Ср</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" checked name="ЧТ" id="ЧТ" class="checkbox__input">
+                  <label for="ЧТ" class="checkbox__label">Чт</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" checked name="ПТ" id="ПТ" class="checkbox__input">
+                  <label for="ПТ" class="checkbox__label">Пт</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" checked name="СБ" id="СБ" class="checkbox__input">
+                  <label for="СБ" class="checkbox__label">Сб</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" checked name="ВС" id="ВС" class="checkbox__input">
+                  <label for="ВС" class="checkbox__label">Вс</label>
+                  </div>
+              </div>
+            </div>
+
+            <div class="filter__inner">
+              <p>Пол</p>
+              <div class="filter__type">
+                <div class="checkbox">
+                  <input type="checkbox" checked name="М" id="М" class="checkbox__input">
+                  <label for="М" class="checkbox__label">М</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" checked name="Ж" id="Ж" class="checkbox__input">
+                  <label for="Ж" class="checkbox__label">Ж</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter__range slider">
+              <div class="filter__inner">
+                <p>Возраст</p>
+                <p class="text_gray"><span class="value1">14</span>-<span class="value2">80</span></p>
+              </div>
+              <div class="filter__input slider__wrap">
+                <div class="slider__track"></div>
+                <input aria-label="возраст" type="range" min="14" max="80" step="1" value="18" name="age" id="age1" class="range1">
+                <input aria-label="возраст" type="range" min="14" max="80" step="1" value="30" name="age" id="age2" class="range2">
+              </div>
+            </div>
+
+            <div class="filter__inner">
+              <p>Только с фото</p>
+              <div class="toggle">
+                <input aria-label="с фото" type="checkbox" checked name="pic" id="pic" class="toggle__input">
+                <label for="pic" class="toggle__button"></label>
+              </div>
+            </div>
+
+            <div class="filter__inner">
+              <p>Парная игра</p>
+              <div class="toggle">
+                <input aria-label="парная игра" type="checkbox" name="double" id="double" class="toggle__input">
+                <label for="double" class="toggle__button"></label>
+              </div>
+            </div>
+
+            <div class="filter__btn elem_desktop">
+              <button class="button elem_desktop ">Применить</button>
+            </div>
+
+          </div>
+
+          <div class="filter__button filter__mob elem_mobile">
+            <button class="button button_small filter_back">
+              <img src="public/icons/back.svg" alt="back button" class="icon_size-m">
+            </button>
+            <button class="button">Применить</button>
+          </div>
+        </div>
+      </div>
+      <div class="cont">
+        <div class="cont__count elem_desktop">
+          <div class="cont__loc">
+            <h1>Партнёры по теннису,</h1>
+            <h1>Москва</h1>
+            <button>
+              <img src="public/icons/Location-icon.svg" alt="icon" class="icon_size-xs">
+            </button>
+          </div>
+          <p class="text_gray">3880 предложений</p>
+        </div>
+        <div class="cont__search">
+          <div class="search">
+            <img src="public/icons/search-01.svg" alt="icon" class="icon_size-s">
+            <input type="text" name="search" id="search" placeholder="Поиск">
+          </div>
+          <button class="cont__filter elem_mobile">
+            <img src="public/icons/filter.svg" alt="filter icon" class="icon_size-l">
+          </button>
+        </div>
+        <div class="cont__content">
+          <a href="profile.html">
+
+          <div class="card">
+              <img src="public/images/Image(1).webp" alt="person" class="card__image">
+              <div class="card__content">
+                <h2 class="text_bold">Анфиса, 24</h2>
+                <p>Ищу компанию на выходных</p>
+                <p class="text_gray">Уровень игры: 5-7</p>
+                <p class="text_gray elem_desktop">3 км от вас</p>
+              </div>
+              <button class="card__icon">
+                <img src="public/icons/Up.svg" alt="icon" class="icon_size-l">
+              </button>
+          </div>
+        </a>
+          <div class="card">
+            <img src="public/images/Image(2).webp" alt="person" class="card__image">
+            <div class="card__content">
+              <h2 class="text_bold">Анфиса, 24</h2>
+              <p>Ищу компанию на выходных</p>
+              <p class="text_gray">Уровень игры: 5-7</p>
+              <p class="text_gray elem_desktop">3 км от вас</p>
+            </div>
+            <button class="card__icon">
+              <img src="public/icons/Up.svg" alt="icon" class="icon_size-l">
+            </button>
+          </div>
+          <div class="card">
+            <img src="public/images/Image(5).webp" alt="person" class="card__image">
+            <div class="card__content">
+              <h2 class="text_bold">Анфиса, 24</h2>
+              <p>Ищу компанию на выходных</p>
+              <p class="text_gray">Уровень игры: 5-7</p>
+              <p class="text_gray elem_desktop">3 км от вас</p>
+            </div>
+            <button class="card__icon">
+              <img src="public/icons/Up.svg" alt="icon" class="icon_size-l">
+            </button>
+          </div>
+          <div class="card">
+            <img src="public/images/Image(6).webp" alt="person" class="card__image">
+            <div class="card__content">
+              <h2 class="text_bold">Анфиса, 24</h2>
+              <p>Ищу компанию на выходных</p>
+              <p class="text_gray">Уровень игры: 5-7</p>
+              <p class="text_gray elem_desktop">3 км от вас</p>
+            </div>
+            <button class="card__icon">
+              <img src="public/icons/Up.svg" alt="icon" class="icon_size-l">
+            </button>
+          </div>
+          <div class="card">
+            <img src="public/images/Image(9).webp" alt="person" class="card__image">
+            <div class="card__content">
+              <h2 class="text_bold">Анфиса, 24</h2>
+              <p>Ищу компанию на выходных</p>
+              <p class="text_gray">Уровень игры: 5-7</p>
+              <p class="text_gray elem_desktop">3 км от вас</p>
+            </div>
+            <button class="card__icon">
+              <img src="public/icons/Up.svg" alt="icon" class="icon_size-l">
+            </button>
+          </div>
+          <div class="card">
+            <img src="public/images/Image(1).webp" alt="person" class="card__image">
+            <div class="card__content">
+              <h2 class="text_bold">Анфиса, 24</h2>
+              <p>Ищу компанию на выходных</p>
+              <p class="text_gray">Уровень игры: 5-7</p>
+              <p class="text_gray elem_desktop">3 км от вас</p>
+            </div>
+            <button class="card__icon">
+              <img src="public/icons/Up.svg" alt="icon" class="icon_size-l">
+            </button>
+          </div>
+          <div class="card">
+            <img src="public/images/Image(2).webp" alt="person" class="card__image">
+            <div class="card__content">
+              <h2 class="text_bold">Анфиса, 24</h2>
+              <p>Ищу компанию на выходных</p>
+              <p class="text_gray">Уровень игры: 5-7</p>
+              <p class="text_gray elem_desktop">3 км от вас</p>
+            </div>
+            <button class="card__icon">
+              <img src="public/icons/Up.svg" alt="icon" class="icon_size-l">
+            </button>
+          </div>
+          <div class="card">
+            <img src="public/images/Image(5).webp" alt="person" class="card__image">
+            <div class="card__content">
+              <h2 class="text_bold">Анфиса, 24</h2>
+              <p>Ищу компанию на выходных</p>
+              <p class="text_gray">Уровень игры: 5-7</p>
+              <p class="text_gray elem_desktop">3 км от вас</p>
+            </div>
+            <button class="card__icon">
+              <img src="public/icons/Up.svg" alt="icon" class="icon_size-l">
+            </button>
+          </div>
+          <div class="card">
+            <img src="public/images/Image(6).webp" alt="person" class="card__image">
+            <div class="card__content">
+              <h2 class="text_bold">Анфиса, 24</h2>
+              <p>Ищу компанию на выходных</p>
+              <p class="text_gray">Уровень игры: 5-7</p>
+              <p class="text_gray elem_desktop">3 км от вас</p>
+            </div>
+            <button class="card__icon">
+              <img src="public/icons/Up.svg" alt="icon" class="icon_size-l">
+            </button>
+          </div>
+          <div class="card">
+            <img src="public/images/Image(9).webp" alt="person" class="card__image">
+            <div class="card__content">
+              <h2 class="text_bold">Анфиса, 24</h2>
+              <p>Ищу компанию на выходных</p>
+              <p class="text_gray">Уровень игры: 5-7</p>
+              <p class="text_gray elem_desktop">3 км от вас</p>
+            </div>
+            <button class="card__icon">
+              <img src="public/icons/Up.svg" alt="icon" class="icon_size-l">
+            </button>
+          </div>
+          <div class="card">
+            <img src="public/images/Image(1).webp" alt="person" class="card__image">
+            <div class="card__content">
+              <h2 class="text_bold">Анфиса, 24</h2>
+              <p>Ищу компанию на выходных</p>
+              <p class="text_gray">Уровень игры: 5-7</p>
+              <p class="text_gray elem_desktop">3 км от вас</p>
+            </div>
+            <button class="card__icon">
+              <img src="public/icons/Up.svg" alt="icon" class="icon_size-l">
+            </button>
+          </div>
+          <div class="card">
+            <img src="public/images/Image(2).webp" alt="person" class="card__image">
+            <div class="card__content">
+              <h2 class="text_bold">Анфиса, 24</h2>
+              <p>Ищу компанию на выходных</p>
+              <p class="text_gray">Уровень игры: 5-7</p>
+              <p class="text_gray elem_desktop">3 км от вас</p>
+            </div>
+            <button class="card__icon">
+              <img src="public/icons/Up.svg" alt="icon" class="icon_size-l">
+            </button>
+          </div>
+          <div class="card">
+            <img src="public/images/Image(5).webp" alt="person" class="card__image">
+            <div class="card__content">
+              <h2 class="text_bold">Анфиса, 24</h2>
+              <p>Ищу компанию на выходных</p>
+              <p class="text_gray">Уровень игры: 5-7</p>
+              <p class="text_gray elem_desktop">3 км от вас</p>
+            </div>
+            <button class="card__icon">
+              <img src="public/icons/Up.svg" alt="icon" class="icon_size-l">
+            </button>
+          </div>
+          <div class="card">
+            <img src="public/images/Image(6).webp" alt="person" class="card__image">
+            <div class="card__content">
+              <h2 class="text_bold">Анфиса, 24</h2>
+              <p>Ищу компанию на выходных</p>
+              <p class="text_gray">Уровень игры: 5-7</p>
+              <p class="text_gray elem_desktop">3 км от вас</p>
+            </div>
+            <button class="card__icon">
+              <img src="public/icons/Up.svg" alt="icon" class="icon_size-l">
+            </button>
+          </div>
+          <div class="card">
+            <img src="public/images/Image(9).webp" alt="person" class="card__image">
+            <div class="card__content">
+              <h2 class="text_bold">Анфиса, 24</h2>
+              <p>Ищу компанию на выходных</p>
+              <p class="text_gray">Уровень игры: 5-7</p>
+              <p class="text_gray elem_desktop">3 км от вас</p>
+            </div>
+            <button class="card__icon">
+              <img src="public/icons/Up.svg" alt="icon" class="icon_size-l">
+            </button>
+          </div>
+        </div>
+        <div class="cont__paggination">
+          <button>
+            <img src="public/icons/heroicons.com.svg" alt="button left" class="icon_size-s">
+          </button>
+          <button>1</button>
+          <button class="active">2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+          <button>...</button>
+          <button>25</button>
+          <button>
+            <img src="public/icons/heroicons.com.svg" alt="button left" class="icon_size-s icon_right">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-info">
+      <h2 class="text_bold">Поиск спарринг-партнера по большому теннису в Москве</h2>
+      <p class="text_gray">Для тех, кто ищет напарника, Match предоставляет идеальную возможность найти теннисного партнёра по всем необходимым параметрам: уровень игры, возраст, пол, тип матча (одиночная или парная игра), а также наличие свободного корта в Москве. Подберите спарринг-партнёра, который точно соответствует вашему уровню, и наслаждайтесь игрой!</p>
+    </section>
+
+    <footer class="section">
+      <div class="footer">
+        <div class="footer__menu">
+          <a href="#" class="text_darkgray">Партнеры</a>
+          <a href="#" class="text_darkgray">Тренеры</a>
+          <a href="#" class="text_darkgray">Корты</a>
+        </div>
+        <div class="footer__links">
+          <a href="#" class="text_darkgray">Пользовательское соглашение</a>
+          <a href="#" class="text_darkgray">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__logo">
+          <img src="public/icons/Primary.svg" alt="logo" class="icon_size-xl">
+        </div>
+        <div class="footer__border elem_desktop"></div>
+        <p class="text_darkgray">© 2024 Match</p>
+      </div>
+    </footer>
+
+    <script type="module" src="src/js/main.js"></script>
+  </body>
+</html>

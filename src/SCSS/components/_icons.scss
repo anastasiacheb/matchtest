@@ -1,0 +1,58 @@
+@use "../abstracts" as *;
+
+.icon_size-xxxs {
+    width: 0.6rem;
+    height: auto;
+}
+
+.icon_size-xxs {
+    width: 1.1rem;
+    height: auto;
+}
+
+.icon_size-xs {
+    width: 1.6rem;
+    height: auto;
+}
+
+.icon_size-s {
+    width: 1.8rem;
+    height: auto;
+}
+
+.icon_size-m {
+    width: 2rem;
+    height: auto;
+}
+
+.icon_size-l {
+    width: 2.4rem;
+    height: auto;
+}
+
+.icon_size-xl {
+    height: 4rem;
+    width: auto;
+}
+
+.logo {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+.icon_right {
+    transform: rotate(180deg);
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.avatar_m {
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 100%;
+}

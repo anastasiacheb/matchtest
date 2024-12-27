@@ -1,0 +1,42 @@
+@use "../abstracts" as *;
+
+.text, p, a, button {
+    font-weight: 300;
+    color: $black;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.text_medium {
+    font-weight: 500;
+}
+
+.text_semibold {
+    font-weight: 600;
+}
+
+.text_bold {
+    font-weight: 700;
+}
+
+.text_gray {
+    color: $gray;
+}
+
+.text_darkgray {
+    color: $darkgray;
+}
+
+.text_white {
+    color: $white;
+}
+
+.text_logo {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 2.5rem;
+    color: #3D3A44;
+}

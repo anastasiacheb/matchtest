@@ -1,0 +1,405 @@
+@use "../abstracts" as *;
+
+.card {
+
+    display: flex;
+    @include border;
+    border-radius: 1.3rem;
+    background-color: $white;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    @include tablet {
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid $lightgray;
+        padding: 1.6rem;
+    }
+
+    &__image {
+        width: 11rem;
+        height: 11rem;
+        border-radius: 1.2rem;
+
+        @include tablet {
+            width: 15rem;
+            height: 13.6rem;
+        }
+    }
+
+    & h2 a{
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+        font-weight: 600;
+    }
+
+    & p {
+        font-size: 1.5rem;
+        line-height: auto;
+    }
+
+    & p:first-child {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        padding: 1.6rem;
+    }
+
+    &__icon {
+        position: absolute;
+        right: 1.6rem;
+        bottom: 1.6rem;
+
+        @include tablet {
+            bottom: 3.2rem;
+        }
+    }
+}
+
+.card-person {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 1.6rem;
+    background-color: $white;
+    margin-top: 0.6rem;
+    position: relative;
+
+    @include tablet {
+        margin-top: 0;
+    }
+
+    & h2 {
+        font-size: 2.1rem;
+        line-height: 2.6rem;
+    }
+
+    &__image > img {
+        border-radius: 1.2rem;
+
+        &:first-child {
+            height: 28rem;
+
+            @include tablet {
+                height: 23.6rem;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 0.8rem;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__lev {
+        display: flex;
+        gap: 0.6rem;
+        align-items: center;
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+
+        & p {
+            font-size: 1.7rem;
+            line-height: 2.2rem;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        & p {
+            font-size: 1.6rem;
+            line-height: 2rem;
+            
+        }
+    }
+
+    &__tag {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    &__inner {
+        display: flex;
+        gap: 1.2rem;
+        align-items: center;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    &__close {
+        position: absolute;
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+        top: -3.4rem;
+        background-color: $background;
+        z-index: 2000;
+
+        &.active {
+            position: fixed;
+            top: 20px !important;
+
+            @include tablet {
+                top: -3.4rem;
+                position: absolute;
+            }
+        }
+    }
+
+    &__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    }
+
+    &__title2 {
+        flex-grow: 1;
+    }
+
+    &__text {
+
+        & h2 {
+            font-size: 1.7rem;
+            line-height: 2.6rem;
+        }
+
+        & p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+
+    &__header {
+        display: flex;
+        gap: 1.6rem;
+        align-items: center;
+    }
+
+    &__buttons2 {
+        flex-direction: row;
+
+        @include tablet {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__dialog {
+        position: absolute;
+        background: #FBFAF9;
+        top: 9.2rem;
+        height: calc(100vh - 13.4rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        left: 0;
+        padding: 2.4rem 1.6rem 6.4rem 1.6rem;
+
+        &.invisible {
+            display: none;
+        }
+
+        @include tablet {
+            background: $white;
+            height: auto;
+            border-bottom: 1px solid $lightgray;
+            gap: 2.4rem;
+            padding-bottom: 2.4rem;
+            border-left: 1px solid $lightgray;
+            border-right: 1px solid $lightgray;
+            border-radius: 0 0 1.3rem 1.3rem;
+            width: calc(100% + 2px);
+            left: -1px;
+        }
+    }
+
+    &__footer {
+        text-align: center;
+        
+        & p {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    &__mess {
+        display: flex;
+        gap: 1.2rem;
+
+        & div {
+            flex-grow: 1;
+        }
+    }
+}
+
+.card-base {
+    background-color: $white;
+    padding: 1.6rem;
+    border: 1px solid $lightgray;
+    border-radius: 1.3rem;
+
+    & p {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    & h3 {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        padding-bottom: 0.8rem;
+    }
+}
+
+.loader {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    &__wrap {
+        border: 1px solid $lightgray;
+        border-radius: 0.6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem;
+        padding: 1rem;
+    }
+
+    &__name {
+        display: flex;
+        gap: 0.4rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    &__close {
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+    }
+
+    &__track {
+        position: relative;
+        height: 0.5rem;
+        width: 8rem;
+        
+        & div {
+            height: 0.5rem;
+            border-radius: 0.2rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        & div:first-child {
+            background-color: $lightgray;
+            width: 8rem;
+            
+        }
+
+        & div:last-child {
+            background-color: #1751D0;
+            width: 5.5rem;
+        }
+    }
+    
+}
+
+.card-mess {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    display: flex;
+    gap: 1.2rem;
+    padding: 1.2rem 0 0 0;
+    background-color: $white;
+    position: relative;
+
+    @include tablet {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+
+    &_online::after {
+            content: "";
+            position: absolute;
+            top: 1.5rem;
+            left: 6.4rem;
+            width: 1rem;
+            height: 1rem;
+            background-color: #34C759;
+            border-radius: 100%;
+            border: 2px solid $white;
+            transform: translateX(-100%);
+
+            @include tablet {
+                left: 8rem;
+            }
+        }
+
+
+    &__image {
+        width: 6.4rem;
+        height: 6.4rem;
+        border-radius: 100%;
+        flex-shrink: 0;
+        padding-top: 0.3rem;
+    }
+
+    &__content {
+        padding-bottom: 1.4rem;
+        border-bottom: 1px solid #E5E5EA;
+    }
+
+    &__name {
+        font-size: 1.7rem;
+        line-height: 2.6rem;
+    }
+
+    &__count {
+        color: $white;
+        background-color: $yellow;
+        width: 2.1rem;
+        height: 2.1rem;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 510;
+        line-height: 13px;
+        flex-shrink: 0;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__message {
+        display: flex;
+        gap: 1.2rem;
+        align-items: end;
+    }
+}

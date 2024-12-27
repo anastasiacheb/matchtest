@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Match">
+    <title>Match</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/SCSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Merriweather:wght@400;700;900&family=Poppins&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__wrap invisible">
+        <div class="nav__profile elem_mobile">
+          <p>А</p>
+          <p>Аристарх</p>
+        </div>
+        <div class="logo nav__logo elem_desktop">
+          <img src="public/icons/Primary.svg" alt="logo" class="icon_size-xl">
+        </div>
+        <ul class="nav__menu">
+          <li><a href="#" class="nav__link">Партнёры</a></li>
+          <li><a href="#" class="nav__link">Тренеры</a></li>
+          <li><a href="#" class="nav__link">Корты</a></li>
+        </ul>
+      </div>
+      <button class="nav__burger elem_mobile">
+        <img src="public/icons/Frame132.svg" alt="burger menu" class="icon_size-l">
+      </button>
+      <div class="logo nav__logo elem_mobile">
+        <img src="public/icons/Primary.svg" alt="logo" class="icon_size-xl">
+      </div>
+      <div class="nav__account">
+        <button class="nav__message text_white">
+          <img src="public/icons/Ellipse7.svg" alt="illustration" class="icon_size-xxxs">
+          3
+          <span class="text text_white elem_desktop "> сообщения</span>
+        </button>
+        <div class="nav__profile elem_desktop">
+          <p>А</p>
+          <p>Аристарх</p>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section-prof">
+      <div class="section-prof__breadcrumbs breadcrumbs elem_desktop">
+        <p>Мои анкеты</p>
+        <img src="public/icons/chevron-right.svg" alt="icon" class="icon_size-l">
+        <p>Теннис</p>
+      </div>
+      <div class="section-prof__wrap">
+        <div class="section-prof__person card-base card-person change__person">
+          <a href="index.html" class="card-person__close change__close elem_mobile">
+            <img src="public/icons/Frame174.svg" alt="back" class="icon_size-xxs">
+            <p>Назад</p>
+          </a>
+          <div class="card-person__image change__img">
+            <!--
+            <div class="change__load change__upload">
+              <button>
+                <img src="public/icons/upload-03.svg" alt="icon" class="icon_size-m">
+              </button>
+              <p>Перетащите фото или</p>
+              <p>нажмите, чтобы выбрать</p>
+              <p>Не более 10 Мб</p>
+            </div>
+            -->
+            <input type="file" name="image" id="image">
+            <div class="change__images">
+              <label for="image1" class="change__load">
+                <input type="file" id="image1" name="image1" accept="image/png, image/jpeg" class="file">
+                <img src="public/icons/plus-01.svg" alt="icon" class="icon_size-l">
+              </label>
+              <label for="image2" class="change__load">
+                <input type="file" id="image2" name="image2" accept="image/png, image/jpeg" class="file">
+                <img src="public/icons/plus-01.svg" alt="icon" class="icon_size-l">
+              </label>
+              <label for="image3" class="change__load">
+                <input type="file" id="image3" name="image3" accept="image/png, image/jpeg" class="file">
+                <img src="public/icons/plus-01.svg" alt="icon" class="icon_size-l">
+              </label>
+              <label for="image4" class="change__load">
+                <input type="file" id="image4" name="image4" accept="image/png, image/jpeg" class="file">
+                <img src="public/icons/plus-01.svg" alt="icon" class="icon_size-l">
+              </label>
+            </div>
+          </div>
+          <div class="card-person__buttons elem_desktop">
+            <button class="button">Опубликовать</button>
+          </div>
+        </div>
+        <div class="section-prof__content">
+          <div class="card-base change__content">
+            <h2>Партнёр</h2>
+
+            <div class="slider">
+              <div class="filter__inner">
+                <p>Уровень игры</p>
+                <p class="text_gray"><span class="value1">2</span>-<span class="value2">5</span></p>
+              </div>
+              <div class="filter__input slider__wrap change__input">
+                <div class="slider__track"></div>
+                <input aria-label="уровень" type="range" min="1" max="7" step="1" value="1" name="level" id="level1" class="range1">
+                <input aria-label="уровень" type="range" min="1" max="7" step="1" value="7" name="level" id="level2" class="range2">
+              </div>
+            </div>
+
+            <div class="slider">
+              <div class="filter__inner">
+                <p>Возраст</p>
+                <p class="text_gray"><span class="value1">14</span>-<span class="value2">80</span></p>
+              </div>
+              <div class="filter__input slider__wrap change__input">
+                <div class="slider__track"></div>
+                <input aria-label="возраст" type="range" min="14" max="80" step="1" value="14" name="age" id="age1" class="range1">
+                <input aria-label="возраст" type="range" min="14" max="80" step="1" value="80" name="age" id="age2" class="range2">
+              </div>
+            </div>
+
+            <div class="change__inner">
+              <p>Пол</p>
+              <div class="check__wrap">
+                <div class="check">
+                  <input type="radio" checked name="Пол" id="Любой" class="check__input">
+                  <label for="Любой" class="check__label">Любой</label>
+                  </div>
+                <div class="check">
+                  <input type="radio" name="Пол" id="Мужчины" class="check__input">
+                  <label for="Мужчины" class="check__label">Мужчины</label>
+                </div>
+                <div class="check">
+                  <input type="radio" name="Пол" id="Женщины" class="check__input">
+                  <label for="Женщины" class="check__label">Женщины</label>
+                  </div>
+              </div>
+            </div>
+
+            <div class="change__inner">
+              <p>Ведущая рука партнёра</p>
+              <div class="check__wrap">
+                <div class="check">
+                  <input type="radio" checked name="Рука" id="Любая" class="check__input">
+                  <label for="Любая" class="check__label">Любая</label>
+                </div>
+                <div class="check">
+                  <input type="radio" name="Рука" id="Левая" class="check__input">
+                  <label for="Левая" class="check__label">Левая</label>
+                  </div>
+                <div class="check">
+                  <input type="radio" name="Рука" id="Правая" class="check__input">
+                  <label for="Правая" class="check__label">Правая</label>
+                  </div>
+              </div>
+            </div>
+
+            <div class="change__inner">
+              <p>Игра</p>
+              <div class="check__wrap">
+                <div class="check">
+                  <input type="radio" checked name="Игра" id="Любая1" class="check__input">
+                  <label for="Любая1" class="check__label">Любая</label>
+                </div>
+                <div class="check">
+                  <input type="radio" name="Игра" id="Одиночная" class="check__input">
+                  <label for="Одиночная" class="check__label">Одиночная</label>
+                  </div>
+                <div class="check">
+                  <input type="radio" name="Игра" id="Парная" class="check__input">
+                  <label for="Парная" class="check__label">Парная</label>
+                </div>
+              </div>
+            </div>
+            <div class="change__com">
+              <p>Комментарий</p>
+              <textarea class="textarea" name="Комментарий" id="Комментарий" placeholder="Опишите, кого бы вы хотели найти"></textarea>
+            </div>
+          </div>
+          <div class="card-base">
+
+            <div class="change__content">
+              <h2>Место и время</h2>
+              <div class="change__com">
+                <p>Город</p>
+                <select aria-label="город" class="select" name="город" id="город">
+                  <option value="0">Указанный в профиле</option>
+                  <option value="1">Москва</option>
+                </select>
+              </div>
+              <div class="filter__range slider">
+                <div class="filter__inner">
+                  <p>Пн-вс</p>
+                  <p class="text_gray">с <span class="value1">10</span> до <span class="value2">18</span></p>
+                </div>
+                <div class="filter__input slider__wrap change__input">
+                  <div class="slider__track"></div>
+                  <input aria-label="время" type="range" min="6" max="24" step="1" value="6" name="time" id="time1" class="range1">
+                  <input aria-label="время" type="range" min="6" max="24" step="1" value="24" name="time" id="time2" class="range2">
+                </div>
+              </div>
+              <div class="check__wrap">
+                <div class="check">
+                  <input type="checkbox" checked name="ПН" id="ПН" class="check__input">
+                  <label for="ПН" class="check__label">Пн</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" checked name="ВТ" id="ВТ" class="check__input">
+                  <label for="ВТ" class="check__label">Вт</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" checked name="СР" id="СР" class="check__input">
+                  <label for="СР" class="check__label">Ср</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" checked name="ЧТ" id="ЧТ" class="check__input">
+                  <label for="ЧТ" class="check__label">Чт</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" checked name="ПТ" id="ПТ" class="check__input">
+                  <label for="ПТ" class="check__label">Пт</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" checked name="СБ" id="СБ" class="check__input">
+                  <label for="СБ" class="check__label">Сб</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" checked name="ВС" id="ВС" class="check__input">
+                  <label for="ВС" class="check__label">Вс</label>
+                </div>
+              </div>
+              <button class="change__button">
+                <img src="public/icons/plus-02.svg" alt="icon" class="icon_size-l">
+                Добавить ещё время
+              </button>
+            </div>
+          </div>
+          <div class="card-person__buttons elem_mobile">
+            <button class="button">Опубликовать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section footer__sticky">
+      <div class="footer">
+        <div class="footer__menu">
+          <a href="#" class="text_darkgray">Партнеры</a>
+          <a href="#" class="text_darkgray">Тренеры</a>
+          <a href="#" class="text_darkgray">Корты</a>
+        </div>
+        <div class="footer__links">
+          <a href="#" class="text_darkgray">Пользовательское соглашение</a>
+          <a href="#" class="text_darkgray">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__logo">
+          <img src="public/icons/Primary.svg" alt="logo" class="icon_size-xl">
+        </div>
+        <div class="footer__border elem_desktop"></div>
+        <p class="text_darkgray">© 2024 Match</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script type="module" src="src/js/main.js"></script>
+    <script>
+      const inputElement = document.querySelector('#image');
+      const pond = FilePond.create(inputElement);
+    </script>
+  </body>
+</html>

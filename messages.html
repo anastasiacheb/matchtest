@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Match">
+    <title>Match</title>
+    <link rel="stylesheet" href="src/SCSS/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Merriweather:wght@400;700;900&family=Poppins&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__wrap invisible">
+        <div class="nav__profile elem_mobile">
+          <p>А</p>
+          <p>Аристарх</p>
+        </div>
+        <div class="logo nav__logo elem_desktop">
+          <img src="public/icons/Primary.svg" alt="logo" class="icon_size-xl">
+        </div>
+        <ul class="nav__menu">
+          <li><a href="#" class="nav__link">Партнёры</a></li>
+          <li><a href="#" class="nav__link">Тренеры</a></li>
+          <li><a href="#" class="nav__link">Корты</a></li>
+        </ul>
+      </div>
+      <button class="nav__burger elem_mobile">
+        <img src="public/icons/Frame132.svg" alt="burger menu" class="icon_size-l">
+      </button>
+      <div class="logo nav__logo elem_mobile">
+        <img src="public/icons/Primary.svg" alt="logo" class="icon_size-xl">
+      </div>
+      <div class="nav__account">
+        <button class="nav__message text_white">
+          <img src="public/icons/Ellipse7.svg" alt="illustration" class="icon_size-xxxs">
+          3
+          <span class="text text_white elem_desktop "> сообщения</span>
+        </button>
+        <div class="nav__profile elem_desktop">
+          <p>А</p>
+          <p>Аристарх</p>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section messages">
+      <!-- <button class="filter__close elem_mobile invisible">
+        <img src="public/icons/Frame174.svg" alt="back" class="icon_size-xxs">
+        Назад
+      </button> -->
+      <div class="messages__header">
+        Диалоги
+      </div>
+
+      <a href="index.html" class="messages__close">
+        <img src="public/icons/Frame174.svg" alt="back" class="icon_size-xxs">
+        <p>Назад</p>
+      </a>
+      
+      <div class="section_double messages__wrap">
+      <div class="cont cont2">
+        <div class="cont__tabs">
+          <button class="tab tab_active">Сообщения <span class="tab__tag">3</span></button>
+          <button class="tab">Запросы <span class="tab__tag">1</span></button>
+        </div>
+        <div class="cont__search cont__search2">
+          <div class="search">
+            <img src="public/icons/search-01.svg" alt="icon" class="icon_size-s">
+            <input type="text" name="search" id="search" placeholder="Поиск">
+          </div>
+        </div>
+        <div class="messages__cards">
+
+        <div class="card-mess card-mess_online">
+          <img src="public/images/Image(2).webp" alt="person" class="card-mess__image">
+          <div class="card-mess__content">
+            <div class="card-mess__header">
+              <p class="text_semibold card-mess__name">Анфиса, 24</p>
+              <p class="text_gray">11:30</p>
+            </div>
+            <div class="card-mess__message">
+              <p class="text_gray">Review the article draft with John to add improvements</p>
+              <p class="card-mess__count">1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-mess">
+          <img src="public/images/Image(2).webp" alt="person" class="card-mess__image">
+          <div class="card-mess__content">
+            <div class="card-mess__header">
+              <p class="text_semibold card-mess__name">Анфиса, 24</p>
+              <p class="text_gray">11:30</p>
+            </div>
+            <div class="card-mess__message">
+              <p class="text_gray">Review the article draft with John to add improvements</p>
+              <p class="card-mess__count">1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-mess card-mess_online">
+          <img src="public/images/Image(2).webp" alt="person" class="card-mess__image">
+          <div class="card-mess__content">
+            <div class="card-mess__header">
+              <p class="text_semibold card-mess__name">Анфиса, 24</p>
+              <p class="text_gray">11:30</p>
+            </div>
+            <div class="card-mess__message">
+              <p class="text_gray">Review the article draft with John to add improvements</p>
+              <p class="card-mess__count">1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-mess card-mess_online">
+          <img src="public/images/Image(2).webp" alt="person" class="card-mess__image">
+          <div class="card-mess__content">
+            <div class="card-mess__header">
+              <p class="text_semibold card-mess__name">Анфиса, 24</p>
+              <p class="text_gray">11:30</p>
+            </div>
+            <div class="card-mess__message">
+              <p class="text_gray">Review the article draft with John to add improvements</p>
+              <p class="card-mess__count">1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-mess card-mess_online">
+          <img src="public/images/Image(2).webp" alt="person" class="card-mess__image">
+          <div class="card-mess__content">
+            <div class="card-mess__header">
+              <p class="text_semibold card-mess__name">Анфиса, 24</p>
+              <p class="text_gray">11:30</p>
+            </div>
+            <div class="card-mess__message">
+              <p class="text_gray">Review the article draft with John to add improvements</p>
+              <p class="card-mess__count">1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-mess card-mess_online">
+          <img src="public/images/Image(2).webp" alt="person" class="card-mess__image">
+          <div class="card-mess__content">
+            <div class="card-mess__header">
+              <p class="text_semibold card-mess__name">Анфиса, 24</p>
+              <p class="text_gray">11:30</p>
+            </div>
+            <div class="card-mess__message">
+              <p class="text_gray">Review the article draft with John to add improvements</p>
+              <p class="card-mess__count">1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-mess card-mess_online">
+          <img src="public/images/Image(2).webp" alt="person" class="card-mess__image">
+          <div class="card-mess__content">
+            <div class="card-mess__header">
+              <p class="text_semibold card-mess__name">Анфиса, 24</p>
+              <p class="text_gray">11:30</p>
+            </div>
+            <div class="card-mess__message">
+              <p class="text_gray">Review the article draft with John to add improvements</p>
+              <p class="card-mess__count">1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-mess card-mess_online">
+          <img src="public/images/Image(2).webp" alt="person" class="card-mess__image">
+          <div class="card-mess__content">
+            <div class="card-mess__header">
+              <p class="text_semibold card-mess__name">Анфиса, 24</p>
+              <p class="text_gray">11:30</p>
+            </div>
+            <div class="card-mess__message">
+              <p class="text_gray">Review the article draft with John to add improvements</p>
+              <p class="card-mess__count">1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-mess card-mess_online">
+          <img src="public/images/Image(2).webp" alt="person" class="card-mess__image">
+          <div class="card-mess__content">
+            <div class="card-mess__header">
+              <p class="text_semibold card-mess__name">Анфиса, 24</p>
+              <p class="text_gray">11:30</p>
+            </div>
+            <div class="card-mess__message">
+              <p class="text_gray">Review the article draft with John to add improvements</p>
+              <p class="card-mess__count">1</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card-mess card-mess_online">
+          <img src="public/images/Image(2).webp" alt="person" class="card-mess__image">
+          <div class="card-mess__content">
+            <div class="card-mess__header">
+              <p class="text_semibold card-mess__name">Анфиса, 24</p>
+              <p class="text_gray">11:30</p>
+            </div>
+            <div class="card-mess__message">
+              <p class="text_gray">Review the article draft with John to add improvements</p>
+              <p class="card-mess__count">1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-mess card-mess_online">
+          <img src="public/images/Image(2).webp" alt="person" class="card-mess__image">
+          <div class="card-mess__content">
+            <div class="card-mess__header">
+              <p class="text_semibold card-mess__name">Анфиса, 24</p>
+              <p class="text_gray">11:30</p>
+            </div>
+            <div class="card-mess__message">
+              <p class="text_gray">Review the article draft with John to add improvements</p>
+              <p class="card-mess__count">1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-mess card-mess_online">
+          <img src="public/images/Image(2).webp" alt="person" class="card-mess__image">
+          <div class="card-mess__content">
+            <div class="card-mess__header">
+              <p class="text_semibold card-mess__name">Анфиса, 24</p>
+              <p class="text_gray">11:30</p>
+            </div>
+            <div class="card-mess__message">
+              <p class="text_gray">Review the article draft with John to add improvements</p>
+              <p class="card-mess__count">1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+          
+      </div>
+
+      <div class="dialog invisible visible-desktop">
+        <div class="dialog__header">
+          <button class="messages__close dialog__close elem_mobile">
+            <img src="public/icons/Frame174.svg" alt="back" class="icon_size-xxs">
+            <p>Назад</p>
+          </button>
+          <p class="elem_mobile">
+            Анфиса, 24
+          </p>
+          <img src="public/images/Image(1).webp" alt="avatar" class="avatar_m elem_mobile">
+            <div class="elem_desktop dialog__inner">
+              <img src="public/images/Image(1).webp" alt="avatar" class="avatar_m elem_desktop">
+              <div class="card-person__text elem_desktop-block">
+                <h2>Анфиса, 24</h2>
+                <p>Москва</p>
+              </div>
+            </div>
+            <button class="button elem_desktop button_light">Перейти в профиль</button>
+          
+        </div>
+
+          <div class="dialog__content">
+            <div class="dialog__fake">
+
+            </div>
+            <div class="message message_in">
+              <p class="message-content">Привет! Как насчёт субботы, в 18:00?</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+  
+            <div class="message message_out">
+              <p class="message-content">Привет! Как насчёт субботы, в 18:00?</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+  
+            <div class="message message_in">
+              <p class="message-content">Длинные сообщения могут быть сложными для восприятия. Они требуют больше времени для чтения и могут отвлекать от основной мысли. Лучше разбивать информацию на короткие абзацы для удобства.</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+  
+            <div class="message message_out">
+              <p class="message-content">Привет! Как насчёт субботы, в 18:00?</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+  
+            <div class="message message_in">
+              <p class="message-content">Привет! Как насчёт субботы, в 18:00?</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+  
+            <div class="message message_out">
+              <p class="message-content">Привет! Как насчёт субботы, в 18:00?</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+          </div>
+
+        
+  
+        <div class="dialog__input">
+          <img src="public/images/Ellipse.png" alt="avatar" class="avatar_m">
+          <textarea name="message" id="message" class="input input_small input_autosize" placeholder="Текст сообщения"></textarea>
+          <button class="button_round button-send">
+            <img aria-label="send button" src="public/icons/send-01-filled.svg" alt="icon" class="icon_size-m">
+          </button>
+        </div>
+
+
+      </div>
+
+      <div class="dialog invisible">
+        <div class="dialog__header">
+          <button class="messages__close dialog__close elem_mobile">
+            <img src="public/icons/Frame174.svg" alt="back" class="icon_size-xxs">
+            <p>Назад</p>
+          </button>
+          <p class="elem_mobile">
+            Никита, 29
+          </p>
+          <img src="public/images/Image(1).webp" alt="avatar" class="avatar_m elem_mobile">
+            <div class="elem_desktop dialog__inner">
+              <img src="public/images/Image(1).webp" alt="avatar" class="avatar_m elem_desktop">
+              <div class="card-person__text elem_desktop-block">
+                <h2>Никита, 29</h2>
+                <p>Москва</p>
+              </div>
+            </div>
+            <button class="button elem_desktop button_light">Перейти в профиль</button>
+          
+        </div>
+
+          <div class="dialog__content">
+            <div class="message message_in">
+              <p class="message-content">Привет! Как насчёт субботы, в 18:00?</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+  
+            <div class="message message_out">
+              <p class="message-content">Привет! Как насчёт субботы, в 18:00?</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+  
+            <div class="message message_in">
+              <p class="message-content">Длинные сообщения могут быть сложными для восприятия. Они требуют больше времени для чтения и могут отвлекать от основной мысли. Лучше разбивать информацию на короткие абзацы для удобства.</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+  
+            <div class="message message_out">
+              <p class="message-content">Привет! Как насчёт субботы, в 18:00?</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+  
+            <div class="message message_in">
+              <p class="message-content">Привет! Как насчёт субботы, в 18:00?</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+  
+            <div class="message message_out">
+              <p class="message-content">,kfkfjas;dkfja;skdljf</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+          </div>
+
+        
+  
+        <div class="dialog__input">
+          <img src="public/images/Ellipse.png" alt="avatar" class="avatar_m">
+          <textarea name="message2" id="message2" class="input input_small input_autosize" placeholder="Текст сообщения"></textarea>
+          <button class="button_round button-send">
+            <img aria-label="send button" src="public/icons/send-01-filled.svg" alt="icon" class="icon_size-m">
+          </button>
+        </div>
+
+
+      </div>
+
+      <div class="dialog invisible">
+        <div class="dialog__header">
+          <button class="messages__close dialog__close elem_mobile">
+            <img src="public/icons/Frame174.svg" alt="back" class="icon_size-xxs">
+            <p>Назад</p>
+          </button>
+          <p class="elem_mobile">
+            Александр, 29
+          </p>
+          <img src="public/images/Image(1).webp" alt="avatar" class="avatar_m elem_mobile">
+            <div class="elem_desktop dialog__inner">
+              <img src="public/images/Image(1).webp" alt="avatar" class="avatar_m elem_desktop">
+              <div class="card-person__text elem_desktop-block">
+                <h2>Александр, 29</h2>
+                <p>Москва</p>
+              </div>
+            </div>
+            <button class="button elem_desktop button_light">Перейти в профиль</button>
+          
+        </div>
+
+          <div class="dialog__content">
+            <div class="message message_in">
+              <p class="message-content">Привет! Как насчёт субботы, в 18:00?</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+  
+            <div class="message message_out">
+              <p class="message-content">Привет! Как насчёт субботы, в 18:00?</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+  
+            <div class="message message_in">
+              <p class="message-content">Длинные сообщения могут быть сложными для восприятия. Они требуют больше времени для чтения и могут отвлекать от основной мысли. Лучше разбивать информацию на короткие абзацы для удобства.</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+  
+            <div class="message message_out">
+              <p class="message-content">Привет! Как насчёт субботы, в 18:00?</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+  
+            <div class="message message_in">
+              <p class="message-content">Привет! Как насчёт субботы, в 18:00?</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+  
+            <div class="message message_out">
+              <p class="message-content">Hello</p>
+              <p class="text_gray">21.12.2024</p>
+            </div>
+          </div>
+
+        
+  
+        <div class="dialog__input">
+          <img src="public/images/Ellipse.png" alt="avatar" class="avatar_m">
+          <textarea name="message2" id="message2" class="input input_small input_autosize" placeholder="Текст сообщения"></textarea>
+          <button class="button_round button-send">
+            <img aria-label="send button" src="public/icons/send-01-filled.svg" alt="icon" class="icon_size-m">
+          </button>
+        </div>
+
+
+      </div>
+    </div>
+    </section>
+
+    <!-- <footer class="section">
+      <div class="footer">
+        <div class="footer__menu">
+          <a href="#" class="text_darkgray">Партнеры</a>
+          <a href="#" class="text_darkgray">Тренеры</a>
+          <a href="#" class="text_darkgray">Корты</a>
+        </div>
+        <div class="footer__links">
+          <a href="#" class="text_darkgray">Пользовательское соглашение</a>
+          <a href="#" class="text_darkgray">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__logo">
+          <img src="public/icons/Primary.svg" alt="logo" class="icon_size-xl">
+        </div>
+        <div class="footer__border elem_desktop"></div>
+        <p class="text_darkgray">© 2024 Match</p>
+      </div>
+    </footer> -->
+
+    <script type="module" src="src/js/messages.js"></script>
+    <script type="module" src="src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+@use "../abstracts" as *;
+
+.button {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: $white;
+    background-color: $black;
+    padding: 1.2rem 0;
+    border-radius: 1.2rem;
+    width: 100%;
+    height: 5rem;
+
+    &.invisible {
+        display: none;
+    }
+
+    &_small {
+        width: 4.8rem;
+        height: 4.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_gray {
+        background-color: $lightgray;
+        color: $black;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }  
+    
+    &_round {
+        background-color: $black;
+        width: 4.4rem;
+        height: 4.4rem;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include tablet {
+            border-radius: 0.8rem;
+        }
+    }
+
+    &_light {
+    width: 158px;
+    height: 36px;
+    padding: 0px 12px 0px 12px;
+    gap: 8px;
+    border-radius: 6px;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    color: $black;
+    //styleName: Medium/14;
+    font-size: 14px;
+    font-weight: 475;
+    line-height: 20px;
+    }
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+
+    & p {
+        color: $gray;
+    }
+    
+}
+
+.tab {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #7F7D83;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 0 1.1rem 0;
+    border-bottom: 2px solid $white;
+
+    &__tag {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    }
+
+    &_active {
+        color: $black;
+        border-bottom: 2px solid $black;
+
+        & .tab__tag {
+            color: $white;
+            background-color: $yellow;
+            width: 2.1rem;
+            height: 2.1rem;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 510;
+            line-height: 13px;
+        }
+    }
+}

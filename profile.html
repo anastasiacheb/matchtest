@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Match">
+    <title>Match</title>
+    <link rel="stylesheet" href="src/SCSS/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Merriweather:wght@400;700;900&family=Poppins&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body class="body">
+    <nav class="nav">
+      <div class="nav__wrap invisible">
+        <div class="nav__profile elem_mobile">
+          <p>А</p>
+          <p>Аристарх</p>
+        </div>
+        <div class="logo nav__logo elem_desktop">
+          <img src="public/icons/Primary.svg" alt="logo" class="icon_size-xl">
+        </div>
+        <ul class="nav__menu">
+          <li><a href="#" class="nav__link">Партнёры</a></li>
+          <li><a href="#" class="nav__link">Тренеры</a></li>
+          <li><a href="#" class="nav__link">Корты</a></li>
+        </ul>
+      </div>
+      <button class="nav__burger elem_mobile">
+        <img src="public/icons/Frame132.svg" alt="burger menu" class="icon_size-l">
+      </button>
+      <div class="logo nav__logo elem_mobile">
+        <img src="public/icons/Primary.svg" alt="logo" class="icon_size-xl">
+      </div>
+      <div class="nav__account">
+        <button class="nav__message text_white">
+          <img src="public/icons/Ellipse7.svg" alt="illustration" class="icon_size-xxxs">
+          3
+          <span class="text text_white elem_desktop "> сообщения</span>
+        </button>
+        <div class="nav__profile elem_desktop">
+          <p>А</p>
+          <p>Аристарх</p>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section-prof">
+      <div class="section-prof__breadcrumbs breadcrumbs elem_desktop">
+        <a href="javascript:history.back()">Предложения игры</a>
+        <img src="public/icons/chevron-right.svg" alt="icon" class="icon_size-l">
+        <p>Анфиса</p>
+      </div>
+      <div class="section-prof__wrap">
+        <div class="section-prof__person card-person">
+          <a href="index.html" class="card-person__close elem_mobile">
+            <img src="public/icons/Frame174.svg" alt="back" class="icon_size-xxs">
+            <p>Назад</p>
+          </a>
+          <a data-fancybox="gallery" data-src="public/images/Image(1).webp" class="card-person__image">
+            <img src="public/images/Image(1).webp" alt="person">
+          </a>
+          <a data-fancybox="gallery" data-src="public/images/Image(2).webp" class="card-person__image elem_invisible">
+            <img src="public/images/Image(2).webp" alt="person">
+          </a>
+          <a data-fancybox="gallery" data-src="public/images/Image(5).webp" class="card-person__image elem_invisible">
+            <img src="public/images/Image(5).webp" alt="person">
+          </a>
+          <a data-fancybox="gallery" data-src="public/images/Image(6).webp" class="card-person__image elem_invisible">
+            <img src="public/images/Image(6).webp" alt="person">
+          </a>
+          <div class="card-person__content hidden1">
+            <div class="card-person__title">
+              <h2>Анфиса, 24</h2>
+              <div class="card-person__lev">
+                <img src="public/icons/lightning-fileld.svg" alt="icon" class="icon_size-l">
+                <p>3-5.5</p>
+              </div>
+            </div>
+            <div class="card-person__info">
+              <div class="card-person__inner">
+                <img src="public/icons/home-04.svg" alt="icon" class="icon_size-m">
+                <p>Живёт в г. Москва</p>
+              </div>
+              <div class="card-person__inner">
+                <img src="public/icons/graduation-cap-02.svg" alt="icon" class="icon_size-m">
+                <p>МГУ</p>
+              </div>
+              <div class="card-person__inner">
+                <img src="public/icons/user-profile-03.svg" alt="icon" class="icon_size-m">
+                <p>Тренер</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-person__buttons hidden2">
+            <button class="button button_black button-offer">Предложить игру</button>
+            <button class="button button_black button-mess invisible">К сообщениям</button>
+            <button class="button button_gray button-follow">
+              <img src="public/icons/favourite.svg" alt="icon" class="icon_size-l">
+              Подписаться
+            </button>
+          </div>
+
+          <div class="section-prof__person section-prof__message card-person invisible">
+            <div class="card-person__header">
+              <img src="public/images/Image(1).webp" alt="person" class="card-person__avatar">
+              <div class="card-person__title card-person__title2">
+                <div class="card-person__text">
+                  <h2>Анфиса, 24</h2>
+                  <p>Москва</p>
+                </div>
+                <div class="card-person__lev">
+                  <img src="public/icons/lightning-fileld.svg" alt="icon" class="icon_size-l">
+                  <p>3-5.5</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-person__input">
+              <textarea class="input message-input" name="message" id="message" placeholder="Комментарий"></textarea>
+            </div>
+            <div class="card-person__buttons card-person__buttons2 hidden3">
+              <button class="button button_gray button-cancel">Отмена</button>
+              <button class="button button_black button-send">Отправить</button>
+            </div>
+            <div class="card-person__dialog invisible">
+              <div class="card-person__mess">
+                <div class="message">
+                  <p class="message-content">Привет! Как насчёт субботы, в 18:00?</p>
+                  <p class="text_gray">21.12.2024</p>
+                </div>
+                <img src="public/images/Ellipse.png" alt="avatar" class="avatar">
+              </div>
+              <div class="card-person__footer">
+                <p class="text_gray">Предложение отправлено. Вы сможете продолжить общение после того, как автор примет его</p>
+                <button class="button button_gray button-cancel2">Отменить предложение</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="section-prof__content">
+          <div class="card-base section-prof__info">
+            <div>
+              <h3>Когда</h3>
+              <p>Пн, ср-пт: с 9 до 15 Сб: с 10 до 21</p>
+            </div>
+            <div>
+              <h3>Тип игры</h3>
+              <p>Одиночная или парная</p>
+            </div>
+            <div>
+              <h3>Мой уровень</h3>
+              <div class="card-person__tag">
+                <p>3 - 5.5</p>
+                <img src="public/icons/information-circle-contained.svg" alt="icon" class="icon_size-m">
+              </div>
+            </div>
+            <div>
+              <h3>Уровень соперника</h3>
+              <div class="card-person__tag">
+                <p>3 - 5.5</p>
+                <img src="public/icons/information-circle-contained.svg" alt="icon" class="icon_size-m">
+              </div>
+            </div>
+          </div>
+          <div class="card-base">
+            <h3>Комментарий</h3>
+            <p>Ищу человека, с которым можно не только играть, но и весело проводить время, изучая новые техники и бросая вызовы друг другу. За пределами корта увлекаюсь путешествиями и здоровым образом жизни. Играю на уровне 3-5, буду рада встретиться на корте и зарядиться хорошей энергией!</p>
+          </div>
+          <div class="card-base section-prof__inner">
+            <div>
+              <h3>Обо мне</h3>
+              <p>Меня зовут Анфиса, и я обожаю теннис. За пределами корта увлекаюсь путешествиями и здоровым образом жизни.</p>
+            </div>
+            <div>
+              <h3>Интересы</h3>
+              <div class="section-prof__inter">
+                <p>Теннис</p>
+                <p>Йога</p>
+                <p>Путешествия</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-base card-person__buttons elem_mobile">
+            <button class="button">Предложить игру</button>
+            <button class="button button_gray">
+              <img src="public/icons/favourite.svg" alt="icon" class="icon_size-l">
+              Подписаться
+            </button>
+          </div>
+          <div class="section-prof__public">
+            <h2 class="elem_desktop">Ищу партнёра по теннису</h2>
+            <p class="text_gray">Опубликовано вчера в 15:35</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section footer__sticky">
+      <div class="footer">
+        <div class="footer__menu">
+          <a href="#" class="text_darkgray">Партнеры</a>
+          <a href="#" class="text_darkgray">Тренеры</a>
+          <a href="#" class="text_darkgray">Корты</a>
+        </div>
+        <div class="footer__links">
+          <a href="#" class="text_darkgray">Пользовательское соглашение</a>
+          <a href="#" class="text_darkgray">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__logo">
+          <img src="public/icons/Primary.svg" alt="logo" class="icon_size-xl">
+        </div>
+        <div class="footer__border elem_desktop"></div>
+        <p class="text_darkgray">© 2024 Match</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script type="module" src="src/js/main.js"></script>
+    <script type="module" src="src/js/profile.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
+    </script>
+  </body>
+</html>
