@@ -1722,7 +1722,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .dialog {
-  background-color: #FBFAF9;
+  background-color: pink;
   position: fixed;
   height: 100svh;
   top: 0;
