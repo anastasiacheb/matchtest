@@ -4,6 +4,7 @@ html {
   font-style: normal;
   background-color: #FBFAF9;
   touch-action: manipulation;
+  height: -webkit-fill-available;
 }
 
 ::-moz-placeholder {
@@ -23,6 +24,7 @@ html {
 body {
   position: relative;
   touch-action: manipulation;
+  min-height: -webkit-fill-available;
 }
 
 * {
@@ -1722,7 +1724,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .dialog {
-  background-color: pink;
+  background-color: lightblue;
   position: fixed;
   height: 100svh;
   top: 0;

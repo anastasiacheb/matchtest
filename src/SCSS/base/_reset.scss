@@ -6,6 +6,7 @@ html {
     font-style: normal;
     background-color: $background;
     touch-action: manipulation;
+    height: -webkit-fill-available;
 }
 
 ::placeholder {
@@ -19,6 +20,7 @@ body {
     position: relative;
     //min-height: 100vh;
     touch-action: manipulation;
+    min-height: -webkit-fill-available;
 }
 
 * {
