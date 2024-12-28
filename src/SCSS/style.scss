@@ -31,9 +31,12 @@
 
 .body_noscroll {
     overflow: hidden;
-    height: 100lvh;
+    height: 100dvh;
+    position: relative;
 
     @include tablet {
         overflow: auto;
+        height: auto;
+        position: static;
     }
 }

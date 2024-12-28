@@ -8,7 +8,7 @@ for (let i = 0; i < inputAutoHeight.length; i++) {
     inputAutoHeight[i].addEventListener("input", function() {
     // inputAutoHeight[i].style.height = "auto";
     inputAutoHeight[i].style.height = inputAutoHeight[i].scrollHeight + "px";
-    dialogContainer[i].style.bottom = this.scrollHeight + 24 + "px";
+    dialogContainer[i].style.bottom = this.clientHeight + 24 + "px";
 });
 }
 

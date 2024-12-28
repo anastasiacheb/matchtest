@@ -309,6 +309,11 @@ button {
   resize: none;
   font-size: 1.7rem;
   line-height: 2.2rem;
+  overflow-y: scroll !important;
+}
+.input::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 .input::-moz-placeholder {
   font-weight: 400;
@@ -1705,7 +1710,7 @@ input[type=range]::-moz-range-thumb {
   background-color: #FFFFFF;
   padding: 0.8rem 0 1.6rem 0;
   text-align: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -1724,7 +1729,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .dialog {
-  background-color: pink;
+  background-color: lightgreen;
   position: fixed;
   height: 100dvh;
   top: 0;
@@ -1732,6 +1737,7 @@ input[type=range]::-moz-range-thumb {
   width: 100%;
   padding: 0 1.6rem;
   transition: all 0.3s;
+  overflow: hidden;
   /* width */
 }
 .dialog ::-webkit-scrollbar {
@@ -1753,6 +1759,7 @@ input[type=range]::-moz-range-thumb {
     height: calc(100vh - 116px - 16px - 16px);
     top: 1.6rem;
     margin-bottom: 1.6rem;
+    padding-top: 0;
   }
   .dialog.invisible {
     display: none;
@@ -1766,9 +1773,10 @@ input[type=range]::-moz-range-thumb {
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 0;
-  position: relative;
+  position: fixed;
   background-color: #FBFAF9;
   z-index: 1000;
+  width: calc(100% - 32px);
 }
 @media screen and (min-width: 768px) {
   .dialog__header {
@@ -1776,6 +1784,7 @@ input[type=range]::-moz-range-thumb {
     padding: 0;
     padding-bottom: 1.6rem;
     border-bottom: 1px solid #F0F0F0;
+    padding-top: 1.6rem;
   }
 }
 .dialog__header > p {
@@ -1944,10 +1953,13 @@ input[type=range]::-moz-range-thumb {
 
 .body_noscroll {
   overflow: hidden;
-  height: 100lvh;
+  height: 100dvh;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .body_noscroll {
     overflow: auto;
+    height: auto;
+    position: static;
   }
 }/*# sourceMappingURL=style.css.map */

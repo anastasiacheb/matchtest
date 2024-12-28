@@ -648,7 +648,7 @@
     background-color: $white;
     padding: 0.8rem 0 1.6rem 0;
     text-align: center;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -668,7 +668,7 @@
 }
 
 .dialog {
-    background-color: pink;
+    background-color: lightgreen;
     position: fixed;
     height: 100dvh;
     top: 0;
@@ -676,6 +676,7 @@
     width: 100%;
     padding: 0 1.6rem;
     transition: all 0.3s;
+    overflow: hidden;
     /* width */
 ::-webkit-scrollbar {
     width: 0;
@@ -697,6 +698,7 @@
         height: calc(100vh - 116px - 16px - 16px);
         top: 1.6rem;
         margin-bottom: 1.6rem;
+        padding-top: 0;
         &.invisible {
             display: none;
         }
@@ -713,16 +715,18 @@
         justify-content: space-between;
         align-items: center;
         padding: 0.8rem 0;
-        position: relative;
+        position: fixed;
         // width: 100%;
         background-color: $background;
         z-index: 1000;
+        width: calc(100% - 32px);
 
         @include tablet {
             background-color: $white;
             padding: 0;
             padding-bottom: 1.6rem;
             border-bottom: 1px solid $lightgray;
+            padding-top: 1.6rem;
         }
 
         & > p {
@@ -774,6 +778,7 @@
         left: 0;
         padding: 0 1.6rem;
         margin-top: auto;
+        //padding-top: 6rem;
         // padding: 1.6rem 0;
         // justify-content: end;
         // padding-bottom: 6.9rem;

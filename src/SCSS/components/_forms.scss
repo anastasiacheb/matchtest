@@ -43,6 +43,12 @@
     resize: none;
     font-size: 1.7rem;
     line-height: 2.2rem;
+    overflow-y: scroll !important;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
 
     &::placeholder {
         font-weight: 400;
