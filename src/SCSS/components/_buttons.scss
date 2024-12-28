@@ -10,6 +10,11 @@
     width: 100%;
     height: 5rem;
 
+    &:hover {
+        background-color: #333333;
+        transition: all .1s;
+    }
+
     &.invisible {
         display: none;
     }
@@ -28,6 +33,11 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+
+        &:hover {
+            background-color: #dedede;
+            transition: all .1s;
+        }
     }  
     
     &_round {

@@ -657,6 +657,29 @@
         display: none;
     }
     }
+
+    &__cards1 {
+        position: relative;
+
+        &.invisible {
+            display: none;
+        }
+    }
+
+    &__cards2 {
+        position: absolute;
+        top: 163px;
+        width: calc(100% - 32px);
+
+        @include tablet {
+            width: 36rem;
+            top: 231px;
+        }
+
+        &.invisible {
+            display: none;
+        }
+    }
 }
 
 .cont2 {
@@ -668,7 +691,7 @@
 }
 
 .dialog {
-    background-color: lightgreen;
+    background-color: $background;
     position: fixed;
     height: 100dvh;
     top: 0;
@@ -683,6 +706,13 @@
     height: 0;
   }
 
+  &__wrap {
+    position: sticky;
+    top: 1.6rem;
+    align-self: start;
+    // height: calc(100vh - 116px - 16px - 16px);
+  }
+
     &.invisible {
         left: -100%;
     }
@@ -694,17 +724,21 @@
         border: 1px solid #F0F0F0;
         background: #FFFFFF;
         border-radius: 13px;
-        position: sticky;
+        position: absolute;
         height: calc(100vh - 116px - 16px - 16px);
-        top: 1.6rem;
+        top: 0;
         margin-bottom: 1.6rem;
         padding-top: 0;
+        transform: scale(100%);
+        
         &.invisible {
-            display: none;
+            // display: none;
+            transform: scale(0%);
+            left: unset;
         }
 
         &.visible-desktop {
-            display: block;
+            transform: scale(100%);
         }
 
         
@@ -727,6 +761,8 @@
             padding-bottom: 1.6rem;
             border-bottom: 1px solid $lightgray;
             padding-top: 1.6rem;
+            position: relative;
+            width: 100%;
         }
 
         & > p {
@@ -787,7 +823,7 @@
         @include tablet {
             position: absolute;
             height: auto;
-            height: calc(100vh - 116px - 63px - 32px - 61px - 32px);
+            height: calc(100vh - 116px - 63px - 32px - 61px - 26px);
             padding-bottom: 1.6rem;
             padding-top: 1.6rem;
 

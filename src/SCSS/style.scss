@@ -35,8 +35,8 @@
     position: relative;
 
     @include tablet {
-        overflow: auto;
-        height: auto;
+        overflow: initial;
+        height: unset;
         position: static;
     }
 }

@@ -70,6 +70,16 @@
         min-height: 4.5rem;
         max-height: 19.6rem;
     }
+
+    &__search {
+        border: none;
+        outline: none;
+        width: 100%;
+        font-weight: 300;
+        color: $black;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
 }
 
 .message {
@@ -245,6 +255,10 @@ input[type="range"] {
     align-items: center;
     transition: $transition;
     cursor: pointer;
+
+    &__button {
+        cursor: pointer;
+    }
 
     &__input {
         width: 0rem;

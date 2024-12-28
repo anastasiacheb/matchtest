@@ -1,3 +1,31 @@
+let dialogContainer = document.querySelectorAll(".dialog__content");
+let dialogClose = document.querySelectorAll(".dialog__close");
+let dialog = document.querySelectorAll(".dialog");
+let cardMessage = document.querySelectorAll(".card-mess");
+let body = document.querySelector(".body__wrap");
+let dialog0 = dialog[0];
+
+//tabs
+let tabs = document.querySelectorAll(".messages__cards");
+let tabButtons = document.querySelectorAll(".tab");
+
+for (let i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].addEventListener("click", function() {
+        if (tabButtons[i].classList.contains("tab_active")){
+            return;
+        } else {
+            for (let j = 0; j < tabButtons.length; j++) {
+                tabButtons[j].classList.remove("tab_active");
+            }
+            tabButtons[i].classList.add("tab_active");
+            for (let j = 0; j < tabs.length; j++) {
+                tabs[j].classList.add("invisible");
+            }
+            tabs[i].classList.remove("invisible");
+        }
+    });
+}
+
 window.addEventListener("load", () => {
     dialogContainer[0].scrollTop = dialogContainer[0].scrollHeight;
 })
@@ -12,11 +40,29 @@ for (let i = 0; i < inputAutoHeight.length; i++) {
 });
 }
 
-let dialogContainer = document.querySelectorAll(".dialog__content");
-let dialogClose = document.querySelectorAll(".dialog__close");
-let dialog = document.querySelectorAll(".dialog");
-let cardMessage = document.querySelectorAll(".card-mess");
-let body = document.querySelector(".body__wrap");
+
+
+window.addEventListener("scroll", (event) => {
+    for (let i = 0; i < dialog.length; i++) {
+        if (dialog[i].getBoundingClientRect().top > 16 && window.innerHeight > 768) {
+        dialog[i].style.height = window.innerHeight - dialog[i].getBoundingClientRect().top - 16 + "px";
+        dialogContainer[i].style.height = window.innerHeight - dialog[i].getBoundingClientRect().top - 16 - 79 - 61 + "px"; 
+        }
+        // console.log(dialog[i].style.height);
+    }
+});
+
+// window.addEventListener("click", () => {
+//     console.log("click");
+//     window.addEventListener("scroll", (event) => {
+//         console.log(dialog[0].getBoundingClientRect().top);
+//         // for (let i = 0; i < dialog.length; i++) {
+//         //     dialog[i].style.height = window.innerHeight - dialog[i].getBoundingClientRect().top - 16 + "px";
+//         // }
+//     });
+// })
+
+
 
 for (let i = 0; i < cardMessage.length; i++) {
     cardMessage[i].addEventListener("click", () => {
@@ -26,11 +72,14 @@ for (let i = 0; i < cardMessage.length; i++) {
         dialog[0].classList.remove("visible-desktop");
         dialog[i].classList.remove("invisible");
         dialogContainer[i].scrollTop = dialogContainer[i].scrollHeight;
+        if (window.innerHeight > 768) {
+        dialog[i].style.height = window.innerHeight - dialog[i].getBoundingClientRect().top - 16 + "px";
+        dialogContainer[i].style.height = window.innerHeight - dialog[i].getBoundingClientRect().top - 16 - 79 - 61 + "px"; 
+        }
         // disableScroll();
         body.classList.add("body_noscroll");
       });
 }
-
 
 for (let i = 0; i < dialogClose.length; i++) {
     dialogClose[i].addEventListener("click", () => {

@@ -15,6 +15,10 @@
         border: none;
         border-bottom: 1px solid $lightgray;
         padding: 1.6rem;
+
+        &:hover {
+            background-color: #fafafa;
+        }
     }
 
     &__image {
@@ -33,6 +37,11 @@
         line-height: 2.2rem;
         font-weight: 600;
     }
+
+    & h2 {
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+      }
 
     & p {
         font-size: 1.5rem;
