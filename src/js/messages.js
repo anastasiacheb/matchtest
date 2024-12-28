@@ -16,8 +16,7 @@ let dialogContainer = document.querySelectorAll(".dialog__content");
 let dialogClose = document.querySelectorAll(".dialog__close");
 let dialog = document.querySelectorAll(".dialog");
 let cardMessage = document.querySelectorAll(".card-mess");
-let body = document.querySelector("body");
-let html = document.querySelector("html");
+let body = document.querySelector(".body__wrap");
 
 for (let i = 0; i < cardMessage.length; i++) {
     cardMessage[i].addEventListener("click", () => {
@@ -29,7 +28,6 @@ for (let i = 0; i < cardMessage.length; i++) {
         dialogContainer[i].scrollTop = dialogContainer[i].scrollHeight;
         // disableScroll();
         body.classList.add("body_noscroll");
-        html.classList.add("body_noscroll");
       });
 }
 
@@ -40,7 +38,6 @@ for (let i = 0; i < dialogClose.length; i++) {
         dialog[0].classList.add("visible-desktop");
         // enableScroll();
         body.classList.remove("body_noscroll");
-        html.classList.remove("body_noscroll");
       });
 }
 

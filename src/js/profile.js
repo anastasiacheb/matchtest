@@ -14,9 +14,8 @@ let profileCard = document.querySelector(".card-person__header");
 let hiddenElement1 = document.querySelector(".hidden1");
 let hiddenElement2 = document.querySelector(".hidden2");
 let hiddenElement3 = document.querySelector(".hidden3");
-let body = document.querySelector("body");
+let body = document.querySelector(".body__wrap");
 let nav = document.querySelector(".nav");
-let html = document.querySelector("html");
 let closeButton = document.querySelector(".card-person__close");
 
 
@@ -25,7 +24,6 @@ offerButton.addEventListener("click", () => {
     hiddenElement1.style.display = "none";
     hiddenElement2.style.display = "none";
     body.classList.add("body_noscroll");
-    html.classList.add("body_noscroll");
     nav.classList.add("nav_fixed");
     closeButton.classList.add("active");
     // disableScroll()
@@ -36,7 +34,6 @@ cancelButton.addEventListener("click", () => {
     hiddenElement1.style.display = "flex";
     hiddenElement2.style.display = "flex";
     body.classList.remove("body_noscroll");
-    html.classList.remove("body_noscroll");
     nav.classList.remove("nav_fixed");
     closeButton.classList.remove("active");
     // enableScroll();
@@ -63,7 +60,6 @@ profileCard.addEventListener("click", () => {
     hiddenElement2.style.display = "flex";
     hiddenElement3.style.display = "flex";
     body.classList.remove("body_noscroll");
-    html.classList.remove("body_noscroll");
     nav.classList.remove("nav_fixed");
     closeButton.classList.remove("active");
     // enableScroll();
@@ -76,7 +72,6 @@ messageButton.addEventListener("click", () => {
     hiddenElement2.style.display = "none";
     hiddenElement3.style.display = "none";
     body.classList.add("body_noscroll");
-    html.classList.add("body_noscroll");
     nav.classList.add("nav_fixed");
     closeButton.classList.add("active");
     // disableScroll();
@@ -94,7 +89,6 @@ cancelButton2.addEventListener("click", () => {
     offerButton.classList.remove("invisible");
     followButton.classList.remove("invisible");
     body.classList.remove("body_noscroll");
-    html.classList.remove("body_noscroll");
     nav.classList.remove("nav_fixed");
     closeButton.classList.remove("active");
     // enableScroll();
