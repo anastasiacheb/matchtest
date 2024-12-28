@@ -1724,7 +1724,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .dialog {
-  background-color: palegreen;
+  background-color: plum;
   position: fixed;
   height: 100dvh;
   top: 0;
